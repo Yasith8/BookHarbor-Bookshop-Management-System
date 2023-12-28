@@ -1,0 +1,19 @@
+# Ignore files and directories
+.android/
+.bash_profile
+.cache/
+.config/
+.gitconfig
+.gradle/
+.m2/
+.node_repl_history
+.vscode/
+AppData/
+Contacts/
+Desktop/
+Downloads/
+Pictures/
+Saved Games/
+Videos/
+
+  
