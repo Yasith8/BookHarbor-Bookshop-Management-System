@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop Management System</title>
+
+
+
+    <!-- link bs5 css file -->
+    <link rel="stylesheet" href="resources/bootstrap-5.2.3/css/bootstrap.min.css">
+
+    <!-- link bs5 js file -->
+    <script src="resources/bootstrap-5.2.3/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- lik fontawesome css file -->
+    <link rel="stylesheet" href="resources/fontawesome-free-6.4.2/css/all.css">
+
+    <!-- link jquery js file -->
+    <script src="resources/script/jquery-3.7.1.js"></script>
+
+    <!-- datatable css file -->
+    <link rel="stylesheet" href="resources/datatables-1.13.6/css/jquery.dataTables.min.css">
+
+    <!-- datatable js file -->
+    <script src="resources/datatables-1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <!-- link dashboard.css -->
+    <link rel="stylesheet" href="resources/style/dashboard.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row main-cont">
+            <div class="col-2 bg-success">sidebar</div>
+            <div class="col-10 bg-warning">
+                <div class="row pt-3">
+                    <div class="col-9"></div>
+                    <div class="col-3 d-flex justify-content-end">
+
+                        <!--rent book button start -->
+
+                        <!--rent book button end -->
+
+                        <!-- rent a book modal start -->
+                        <div class="modal fade" id="rentbook" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">User Conformation</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#newuser" data-bs-toggle="modal">New User</button>
+                                        <button class="btn btn-primary" data-bs-target="#member" data-bs-toggle="modal">Member</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- new user form start -->
+                        <div class="modal fade" id="newuser" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Hide this modal and show the first with the button below.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- new user form end -->
+
+
+                        <!-- member form start -->
+                        <div class="modal fade" id="member" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Hide this modal and show the first with the button below.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- member form end -->
+
+                        <!--rent book button start -->
+                        <button class="btn btn-primary mx-2" data-bs-target="#rentbook" data-bs-toggle="modal">Rent A Book</button>
+                        <!--rent book button end -->
+                        <!-- rent a book modal end -->
+
+
+
+                        <!--rent book start -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Buy A Book
+                                </button>
+                        <!--rent book end -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
