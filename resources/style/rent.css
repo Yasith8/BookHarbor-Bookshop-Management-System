@@ -1,0 +1,16 @@
+body{
+    background-image: url(../image/library.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customer-card{
+    background-color: rgba(247, 247, 248, 0);
+    border: 2px solid rgb(12, 12, 12);
+}
+
+
+
+.customer-cardbody{
+    background-color: rgba(178, 184, 184, 0.479);
+}
