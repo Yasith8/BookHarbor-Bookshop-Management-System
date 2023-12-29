@@ -31,7 +31,7 @@
         <div class="row m-2">
             <div class="col-12 text-center 
             bg-dark text-light">
-                <h2> Rent and Search Books </h2>
+                <h2> Search Books </h2>
             </div>
         </div>
         <!-- title area End -->
@@ -42,101 +42,44 @@
             <!-- Card area start  -->
             <div class="col-12">
                 <div class="card customer-card">
-                    <div class="card-body customer-cardbody">
+                    <div class="card-body customer-cardbody text-dark">
                         <!-- form Area Start-->
                         <div class="row mt-2">
-                            <div class="col-12">
-                                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                                    Add new Details
-                                  </button>
-                                  <div style="min-height: 120px;">
-                                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                                      <div class="card card-body bg-dark text-light" style="width: 1300px;">
+                            <div class="col-12">                                
                                     <form id="rentalForm">
-                                        <div class="row mt-2">
-                                            <div class="col-12">
-                                                <label><span class="text-danger"> *</span> Required</label>
-                                            </div>
-                                        </div><br><br>
+
                                         <div class="row">
-                                           <label for="customerId" class="col-6 col-form-label fw-bold">Customer ID :<span class="text-danger"> * </span></label>
-                                           <label for="customerName" class="col-4 col-form-label fw-bold">Customer Name :<span class="text-danger"> * </span></label>
+                                           <label for="bookName" class="col-4 col-form-label fw-bold">Book Name :</label>
                                         </div>
-                                       <div class="row">
-                                            <div class="col-6">
-                                             <input type="text" id="customerId" class="form-control" name="customerId" required>
-                                            </div>
-                                            <div class="col-6">
-                                             <input type="text" id="customerName" class="form-control" name="customerName" required>
-                                            </div>
-                                        </div><br>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <div class="row mb-1">
-                                                    <label for="isNew" class="form-label fw-bold">
-                                                        New Customer?<span class="text-danger"> * </span>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input type="radio" class="form-check-input" value="Yes" id="radioYes"
-                                                        required name="isNew">
-                                                    <label for="radioYes" class="form-check-lable fw-bold">Yes</label>
-                                                </div>
-                            
-                                                <div class="form-check form-check-inline">
-                                                    <input type="radio" class="form-check-input" value="No"
-                                                        id="radioNo" required name="isNew">
-                                                    <label for="radioNo" class="form-check-lable fw-bold">No</label>
-                                                </div>
+                                        <div class="col-8">
+                                         <input type="text" id="bookName" class="form-control" name="bookName" required>
                                         </div><br><br>
+
                                         <div class="row">
-                                            <label for="bookId" class="col-6 col-form-label fw-bold">Book Id : <span class="text-danger">*</span></label>
-                                            <label for="rentalDate" class="col-6 col-form-label fw-bold">Rental Date: <span class="text-danger">*</span></label>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <input type="text" id="bookId" class="form-control" name="bookId" required>
-                                               </div>
-                                               <div class="col-6">
-                                                <input type="date" id="rentalDate" class="form-control" name="rentalDate" required>
-                                               </div>
-                                        </div><br><br>
-                                        <div class="row">
-                                            <label for="dueDate" class="col-6 col-form-label fw-bold">Due Date : <span class="text-danger">*</span></label>
-                                            <label for="rentalFee" class="col-6 col-form-label fw-bold">Rental Fee : <span class="text-danger">*</span></label>
-                                        </div><br>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <input type="date" id="dueDate" class="form-control" name="dueDate" required>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="text" id="rentalFee" class="form-control" name="rentalFee" required>
-                                            </div>
-                                        </div><br><br>
-                                        <div class="row">
-                                        <label for="lostBook" class="col-6 col-form-label fw-bold">Lost Book (Fee = Book Price + Ticket) : <span class="text-danger">*</span></label>
-                                        <div class="col-6">
-                                            <select id="" class="form-select">
-                                                <option value=""selected disabled>lost book?</option>
-                                                <option>Yes</option>
-                                                <option>No</option>
-                                            </select>                                        </div>
-                                        </div><br><br><br>
+                                            <label for="bookId" class="col-4 col-form-label fw-bold">Book Id :</label>
+                                         </div>
+                                         <div class="col-8">
+                                          <input type="text" id="bookId" class="form-control" name="bookId" required>
+                                         </div><br><br>
+
+                                         <div class="row">
+                                            <label for="authorName" class="col-4 col-form-label fw-bold">Author Name :</label>
+                                         </div>
+                                         <div class="col-8">
+                                          <input type="text" id="authorName" class="form-control" name="authorName" required>
+                                         </div><br><br>
+                                        
+                                       
                                         <div class="row">
                                             <div class="col-3"></div>
                                             <div class="col-3"></div>
                                             <div class="col-3">
-                                                <button type="button" class="btn btn-light fw-bold">Rent book</button>
+                                                <button type="button" class="btn btn-light fw-bold">Search book</button>
 
 
                                             </div>
                                         </div>
-                                    </form>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                
+                                    </form>      
                             </div>
                         </div>
                         <!-- form Area End-->
@@ -147,15 +90,16 @@
                     <div class="col-12">
                         <div class="card customer-card">
                             <div class="card-body customer-cardbody">
-                                <table class="table table-bordered table-hover">
-                                    <thead class=" table-dark">
+                                <table class="table  table-bordered table-hover text-center ">
+                                    <thead class=" table-head text-light">
                                         <tr>
-                                            <th>Customer Id</th>
-                                            <th>Customer Name</th>
+                                            <th colspan="3">Rent Book</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Book Name</th>
                                             <th>Book ID</th>
-                                            <th>Rental Date</th>
-                                            <th>Due Date</th>
-                                            <th>Rental Fee</th>
+                                            <th>Author Name :</th>
+
                                         </tr>
                                         </thead>
                                         <tbody class="table-body">
@@ -163,25 +107,40 @@
                                                 <th>test</th>
                                                 <th>test</th>
                                                 <th>test</th>
-                                                <th>test</th>
-                                                <th>test</th>
-                                                <th>test</th>
+
                                             </tr>
                                             <tr>
                                                 <th>test</th>
                                                 <th>test</th>
                                                 <th>test</th>
+
+                                            </tr>
+                                        </tbody>
+                                </table><br><br>
+                                <table class="table  table-bordered table-hover text-center ">
+                                    <thead class=" table-head text-light">
+                                        <tr>
+                                            <th colspan="3">Sell Book</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Book Name</th>
+                                            <th>Book ID</th>
+                                            <th>Author Name :</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody class="table-body">
+                                            <tr>
                                                 <th>test</th>
                                                 <th>test</th>
                                                 <th>test</th>
+
                                             </tr>
                                             <tr>
                                                 <th>test</th>
                                                 <th>test</th>
                                                 <th>test</th>
-                                                <th>test</th>
-                                                <th>test</th>
-                                                <th>test</th>
+
                                             </tr>
                                         </tbody>
                                 </table>

@@ -12,5 +12,13 @@ body{
 
 
 .customer-cardbody{
-    background-color: rgba(178, 184, 184, 0.479);
+    background-color: rgba(178, 184, 184, 0.75);
+}
+
+.table-body{
+    background-color: rgba(178, 184, 184, 0.75);
+}
+
+.table-head{
+    background-color: rgba(36, 37, 37, 0.75);
 }
